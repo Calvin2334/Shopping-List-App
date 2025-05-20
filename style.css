@@ -56,14 +56,15 @@ body.dark #completion-message{
 }
 
 .toggle-btn{
-    float: right;
-    margin-bottom: 1rem;
+    display: block;
+    margin: 0 auto 1 rem auto;
     padding: 0.3rem 0.8rem;
     background: #007acc;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 0,9rem;
 }
 form{
     display: flex;
