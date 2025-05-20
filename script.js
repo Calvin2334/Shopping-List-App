@@ -63,3 +63,18 @@ function checkCompletion() {
   const acquired = list.querySelectorAll("li.acquired").length;
   message.classList.toggle("hidden", total === 0 || total !== acquired);
 }
+const toggleBtn = document.getElementById("toggle-dark");
+
+toggleBtn.addEventListener("click", () => {
+document.body.classList.toggle("dark");
+
+const isDark = document.body.classList.contains("dark");
+localStorage.setItem("darkMode", isDark ? "on" : "off");
+});
+
+window.addEventListener("DOMContentLoaded", () =>{
+    if (localStorage.getItem("darkMode") === "on"){
+        document.body.classList.add("dark");
+    }
+});
+
