@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <h1>Shopping List</h1>
+        <form id="item-form">
+            <input type="text" id="item-input" placeholder="Add and item" required />
+            <button type="submit">Add</button>
+        </form>
+        <ul id="item-list"></ul>
+        <p class="instructions">🛈 Tap an item to mark it as collected. Tap again to unmark.</p>
+        <div id="completion-message" class="hidden">
+            <h2> All Items acquired </h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
