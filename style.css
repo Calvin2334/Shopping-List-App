@@ -20,6 +20,51 @@ h1{
     text-align: center;
 }
 
+body.dark{
+    background: #121212;
+    color:#e0e0e0;
+
+}
+
+body.dark .app{
+    background: #1e1e1e;
+    box-shadow: none;
+}
+
+body.dark input,
+body.dark button{
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark li{
+    border-color: #444;
+}
+
+body.dark li.acquired{
+    background-color: #264d26;
+}
+
+body.dark .instructions{
+    color: #aaa;
+}
+
+body.dark #completion-message{
+    background: #204020;
+    color: #c0ffc0;
+}
+
+.toggle-btn{
+    float: right;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.8rem;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 form{
     display: flex;
     gap: 0.5rem;
